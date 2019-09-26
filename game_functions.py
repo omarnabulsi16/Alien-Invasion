@@ -47,8 +47,8 @@ def fire_bullet(ai_settings, screen, ship, bullets):
     if len(bullets) < ai_settings.bullets_allowed:
         new_bullet = Bullet(ai_settings, screen, ship)
         bullets.add(new_bullet)
-        sound = pygame.mixer.Sound(r'C:\Users\omarn\Desktop\pickup.wav')
-        pygame.mixer.music.load(r'C:\Users\omarn\Desktop\pickup.wav')
+        sound = pygame.mixer.Sound('sounds/pickup.wav')
+        pygame.mixer.music.load('sounds/pickup.wav')
         pygame.mixer.music.play(1, 0.0)
         musicPlaying = True;
 def update_screen(ai_settings, screen, stats, sb, ship, aliens, bullets, play_button):
