@@ -5,7 +5,7 @@ class Ship(Sprite):
         super(Ship, self).__init__()
         self.screen = screen
         self.ai_settings = ai_settings
-        self.image = pygame.image.load(r'C:\Users\omarn\Desktop\ship.jpg')
+        self.image = pygame.image.load('images/ship.jpg')
         self.rect = self.image.get_rect()
         self.screen_rect = screen.get_rect()
         self.rect.centerx = self.screen_rect.centerx
